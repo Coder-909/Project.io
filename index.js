@@ -1,0 +1,17 @@
+const express = require('express')
+const path = require('path')
+const PORT = process.env.PORT || 5000
+
+express()
+  .use(express.static(path.join(__dirname, 'public')))
+  .set('views', path.join(__dirname, 'views'))
+  .set('view engine', 'ejs')
+  .get('/', (req, res) => res.render('index'))
+  .get('/project', (req, res) => res.render('project'))
+  .get('/', (req, res) => res.render('index'))
+  .get('/', (req, res) => res.render('index'))
+  .get('/Car_stimulation', (req, res) => res.render('./projects/Car stimulation/index.ejs'))
+  .get('/Rain', (req, res) => res.render('./projects/Rain/index.ejs'))
+  .get('/Flappy_bird', (req, res) => res.render('./projects/Flappy bird/index.ejs'))
+  .get('/Gravity_balls', (req, res) => res.render('./projects/Gravity balls/index.ejs'))
+  .listen(PORT, () => console.log(`Listening on ${ PORT }`))

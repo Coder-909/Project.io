@@ -1,0 +1,239 @@
+body, html{
+    width:100%;
+    height:100%;
+    margin:0px;
+    padding:0px;
+
+}
+*{
+    margin:0;
+    padding: 0;
+}
+
+/* Navigational Bar  |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+nav{
+    transition: all 0.3s;
+    width:100%;
+    height: 80px;
+    position: fixed;   
+    transition: all 0.2s;
+}
+ul{
+    list-style-type: none;
+    margin:30px 20px 20px 60%;   
+    transition: all 0.2s;
+}
+li{
+    float: left;
+}
+li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block; 
+    color:white;
+}
+li a:hover{
+    background:#824e17b3;    
+    transition: all 0.2s;
+}
+nav.scrolled{
+    height:60px;
+    background:white;
+}
+nav.scrolled .topHeading{
+    color:rgb(153, 117, 24);
+    margin:1px 20px 20px 90px;
+}
+nav.scrolled ul {
+    margin:11px 20px 20px 60%;
+}
+nav.scrolled ul li a{
+    color:rgb(153, 117, 24);    
+}
+nav.scrolled ul li a:hover{
+    background: rgb(216, 208, 189);
+}
+.topHeading{
+    position:absolute;
+    max-width: 30%;
+    padding: 10px;
+    margin:20px 20px 20px 40px;
+    font-family: 'Kaushan Script', cursive;
+    letter-spacing: 5px;
+    color:white;
+    font: 50px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+.toggle{
+    width:100%;
+    background: white;
+    text-align: right;
+    display:none;
+}
+.toggle i{
+    font-size: 26px;
+    color:rgb(153, 117, 24);
+    padding:20px 40px;
+    cursor: pointer;
+}
+
+
+/* Home page |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+#home{
+    width:100%;
+    height:100%;
+    background-image: url('../assets/nature.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* The quote */
+.quote{
+    position: absolute;
+    max-width:40%;
+    font-size: 3vw;
+    bottom:20%;
+    left:5%;
+    color:white;
+    font-family: 'Satisfy', cursive;
+}
+.quote span{
+    font-family: 'Righteous', cursive;
+    margin-left:10%;
+}
+
+/* Projects  page ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+#project_tab h1{
+    font-family: 'Questrial', sans-serif;
+    margin:5% 20% ;
+}
+
+#project_tab h2{
+    font-size: 2vw;
+    font-family: 'Questrial', sans-serif;
+    margin:0% 20% 3% 6%
+}
+
+.view_more{
+    text-decoration: none;
+    float:right;
+    margin:-5% 10%;
+}
+
+.projects{
+    width:80%;
+    margin:0% 15%;
+    display:grid;
+    grid-template-columns: 24% 24% 24%;
+    grid-column-gap: 7%;
+    grid-row-gap:20%;
+}
+.card{
+    box-shadow:7px 7px 10px grey; 
+    border-radius: 15px;
+    text-decoration: none;
+    width:100%;
+    height:110%;
+}
+
+.card img{
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    height:75%;
+    width:100%;
+}
+
+.card h3{
+    text-align: center;
+    color:black;    
+    margin:7% 25% 7% 24%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* All media styles |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+@media (max-width:768px){
+    .toggle{
+        display:block;
+    }
+ 
+    ul{
+        display:none;
+        background: white;
+        width:100%;
+        margin:0px 0px;
+    }
+    nav.scrolled ul{
+        display:none;
+        background: white;
+        width:100%;
+        margin:0px 0px;
+    }
+    li{
+        width:100%;
+        text-align: center;
+        display: block;
+        background: rgb(194, 139, 0);
+        color:white;
+    }  
+    li a{
+        padding: 15px;
+    }
+    li a:hover{
+        background: rgb(165, 118, 0);
+    }
+    .active{
+        display:block;
+    }
+    .topHeading{
+        margin:-60px 0px 20px 40%;
+        color:rgb(153, 117, 24);
+    }
+    nav.scrolled .topHeading{
+        margin:-60px 0px 20px 40%;
+        color:rgb(153, 117, 24);
+    }
+
+}
+
+@media (max-width:1081px){
+ 
+    .projects{
+        grid-template-columns: 35% 35%;
+    }
+}
+
+@media (max-width:600px){
+    .projects{
+        margin-left:20%;
+        grid-template-columns: 70%;
+    }
+}

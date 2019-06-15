@@ -1,0 +1,52 @@
+nav{
+    height:60px;
+    background:white;
+}
+.topHeading{
+    color:rgb(153, 117, 24);
+    margin:1px 20px 20px 90px;
+}
+ul {
+    margin:11px 20px 20px 60%;
+}
+ul li a{
+    color:rgb(153, 117, 24);    
+}
+ul li a:hover{
+    background: rgb(216, 208, 189);
+}
+
+.heading1{
+    font-family: 'Questrial', sans-serif;
+    position: absolute;
+    top:15%;
+    left:6%;
+}
+
+.projects{
+    position:absolute;
+    top:25%;
+    left:7%;
+    width:90%;
+    margin:0;
+    display:grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-column-gap: 4%;
+    grid-row-gap:20%;
+}
+
+.card{
+    width:90%;
+    height:110%;
+}
+
+.card img{
+    height:75%;
+    width:100%;
+}
+
+.card h3{
+    text-align: center;
+    color:black;    
+    margin:7% 25% 7% 24%;
+}
