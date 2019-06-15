@@ -47,6 +47,20 @@
 
 
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
-
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#menu').click(function(){
+                $('ul').toggleClass('active');
+            })
+        })
+        $(window).on('scroll',function(){
+            if($(window).scrollTop()){
+                $('nav').addClass('scrolled');
+            }else{
+                $('nav').removeClass('scrolled');
+            }
+        })
+    
+    </script>
 </body>
 </html>

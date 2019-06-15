@@ -12,10 +12,10 @@ body, html{
 
 /* Navigational Bar  |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 nav{
-    transition: all 0.3s;
     width:100%;
     height: 80px;
     position: fixed;   
+    z-index: 2;
     transition: all 0.2s;
 }
 ul{
@@ -45,15 +45,20 @@ nav.scrolled .topHeading{
     margin:1px 20px 20px 90px;
 }
 nav.scrolled ul {
-    margin:11px 20px 20px 60%;
+    margin:12px 20px 20px 60%;   
+    transition: all 0.2s;
 }
 nav.scrolled ul li a{
-    color:rgb(153, 117, 24);    
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block; 
+    color:rgb(153, 117, 24);   
 }
 nav.scrolled ul li a:hover{
     background: rgb(216, 208, 189);
 }
 .topHeading{
+    cursor: none;
     position:absolute;
     max-width: 30%;
     padding: 10px;
@@ -83,7 +88,7 @@ nav.scrolled ul li a:hover{
 #home{
     width:100%;
     height:100%;
-    background-image: url('../assets/nature.jpg');
+    background-image: url('nature.jpg');
     background-attachment: fixed;
     background-size: cover;
 }
@@ -91,10 +96,10 @@ nav.scrolled ul li a:hover{
 /* The quote */
 .quote{
     position: absolute;
-    max-width:40%;
-    font-size: 3vw;
-    bottom:20%;
-    left:5%;
+    max-width:50%;
+    font-size: 40px;
+    bottom:10%;
+    left:2%;
     color:white;
     font-family: 'Satisfy', cursive;
 }
@@ -111,9 +116,9 @@ nav.scrolled ul li a:hover{
 }
 
 #project_tab h2{
-    font-size: 2vw;
+    font-size: 25px;
     font-family: 'Questrial', sans-serif;
-    margin:0% 20% 3% 6%
+    margin:0% 20% 3% 6%;
 }
 
 .view_more{
@@ -131,11 +136,17 @@ nav.scrolled ul li a:hover{
     grid-row-gap:20%;
 }
 .card{
-    box-shadow:7px 7px 10px grey; 
     border-radius: 15px;
+    border:0.5px solid rgb(168, 168, 168);
     text-decoration: none;
     width:100%;
     height:110%;
+    transition: transform 0.3s ,
+                box-shadow 0.3s;
+}
+.card:hover{
+    transform: translate(0px,-10px);
+    box-shadow:0px 7px 10px grey; 
 }
 
 .card img{
@@ -152,22 +163,25 @@ nav.scrolled ul li a:hover{
 }
 
 
+/* Contact tab |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#contact{
+    margin:10% 0% 0% 0%;
+    background:goldenrod;
+}
+#contact h1{
+    color:black;
+    font-family: 'Questrial', sans-serif;
+    padding:5% 15% 2% 35%;
+}
+#contact h2{
+    color:black;
+    font-family: 'Questrial', sans-serif;
+    padding:2% 20% 8% 33.5%;
+}
+#contact h2 span{
+    color:rgb(0, 81, 255);
+}
 
 
 
@@ -192,7 +206,6 @@ nav.scrolled ul li a:hover{
         margin:0px 0px;
     }
     nav.scrolled ul{
-        display:none;
         background: white;
         width:100%;
         margin:0px 0px;
@@ -207,8 +220,15 @@ nav.scrolled ul li a:hover{
     li a{
         padding: 15px;
     }
+    nav.scrolled ul li a{       
+        padding: 15px;
+
+    }
     li a:hover{
         background: rgb(165, 118, 0);
+    }
+    nav.scrolled ul li a:hover{
+        background:rgb(165,118,0);
     }
     .active{
         display:block;
@@ -222,18 +242,107 @@ nav.scrolled ul li a:hover{
         color:rgb(153, 117, 24);
     }
 
+    .quote{
+       font-size: 35px;
+    }
 }
 
-@media (max-width:1081px){
+@media (max-width:950px){
  
     .projects{
         grid-template-columns: 35% 35%;
     }
+    
+    #contact{
+        margin:20% 0% 0% 0%;
+        background:goldenrod;
+    }
+    
+    #contact h1{
+        padding:5% 25% 2% 25%;
+    }
+    #contact h2{
+        padding:2% 20% 8% 23.5%;
+    }
+    
+    .quote{
+        max-width: 70% ; 
+    }
 }
 
-@media (max-width:600px){
-    .projects{
+@media (max-width:650px){
+    /* .projects{
         margin-left:20%;
         grid-template-columns: 70%;
+    } */
+    .projects{
+        width:90%;
+        margin:0% 10%;
+    }
+    .card{
+        width:110%;
+        height:120%;
+    }
+    
+    #contact{
+        margin:30% 0% 0% 0%;
+        background:goldenrod;
+    }
+    #contact h1{
+        padding:5% 15% 2% 15%;
+    }
+    #contact h2{
+        padding:2% 10% 8% 13.5%;
+    }
+}
+
+@media (max-width:460px){
+    .projects{
+        width:90%;
+        margin:0% 7%;
+        grid-template-columns: 40% 40% ;
+        grid-column-gap: 10%;
+    }
+    .card{
+        width:115%;
+    }
+    .card h3{
+        font-size: 14px;
+    }
+    .topHeading{
+        left:-30%;
+    }
+    #contact{
+        margin:40% 0% 0% 0%;
+        background:goldenrod;
+    }
+    
+    #contact h1{
+        padding:5% 5% 2% 5%;
+    }
+    #contact h2{
+        padding:2% 0% 8% 3.5%;
+    }
+    .quote{
+        max-width: 90%;
+        font-size: 30px;
+    }
+}
+
+@media(max-width:300px){   
+    .projects{
+        width:90%;
+        margin:0% 9%;
+        grid-template-columns: 90%;
+        grid-row-gap: 13%;
+    }
+    .card{
+        width:100%;
+    }
+    .card h3{
+        font-size: 20px;
+    }
+    #contact{
+        margin:90% 0% 0% 0%;
     }
 }

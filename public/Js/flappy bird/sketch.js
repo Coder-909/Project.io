@@ -9,7 +9,7 @@ var score = document.getElementById('score');
 var score_num = 0;
 
 function setup() {
-    createCanvas(850,600);
+    createCanvas(innerWidth,innerHeight);
 
     bird = new Bird();
 }

@@ -36,7 +36,7 @@ ul li a:hover{
 }
 
 .card{
-    width:90%;
+    width:95%;
     height:110%;
 }
 
@@ -49,4 +49,133 @@ ul li a:hover{
     text-align: center;
     color:black;    
     margin:7% 25% 7% 24%;
+}
+
+
+
+
+
+@media (max-width:768px){
+    .toggle{
+        display:block;
+    }
+ 
+    ul{
+        display:none;
+        background: white;
+        width:100%;
+        margin:0px 0px;
+    }
+    nav.scrolled ul{
+        background: white;
+        width:100%;
+        margin:0px 0px;
+    }
+    li{
+        width:100%;
+        text-align: center;
+        display: block;
+        background: rgb(194, 139, 0);
+        color:white;
+    }  
+    li a{
+        padding: 15px;
+    }
+    nav.scrolled ul li a{       
+        padding: 15px;
+
+    }
+    li a:hover{
+        background: rgb(165, 118, 0);
+    }
+    nav.scrolled ul li a:hover{
+        background:rgb(165,118,0);
+    }
+    .active{
+        display:block;
+    }
+    .topHeading{
+        margin:-60px 0px 20px 40%;
+        color:rgb(153, 117, 24);
+    }
+    nav.scrolled .topHeading{
+        margin:-60px 0px 20px 40%;
+        color:rgb(153, 117, 24);
+    }
+}
+
+@media (max-width:1020px){
+    .projects{
+        grid-template-columns: 24% 24% 24% 24%;
+        grid-column-gap: 2%;
+        left:4.5%;
+    }
+
+    .card{
+        width:100%;
+    }
+}
+@media (max-width:850px){
+    .projects{
+        width:80%;
+        left:8%;
+        grid-template-columns: 33% 33% 33%;
+        grid-column-gap: 4%;
+    }
+}
+
+@media (max-width:850px){
+    .projects{
+        width:90%;
+        left:3%;
+        grid-template-columns: 33% 33% 33%;
+        grid-column-gap: 3%;
+    }
+}
+
+@media (max-width:600px){
+    .projects{
+        width:80%;
+        left:10%;
+        grid-template-columns: 40% 40%;
+        grid-column-gap: 10%;
+    }
+    .card{
+        width:110%;
+    }
+}
+@media (max-width:530px){
+    .projects{
+        width:90%;
+        left:7%;
+        grid-template-columns: 40% 40%;
+        grid-column-gap: 10%;
+    }
+    .card{
+        width:120%;
+    }
+}
+@media (max-width:400px){
+    .projects{
+        width:95%;
+        left:2%;
+        grid-template-columns: 40% 40%;
+        grid-column-gap: 10%;
+    }
+    .card{
+        width:120%;
+        height:120%;
+    }
+    .card h3{
+        font-size:15px;
+    }
+}
+@media (max-width:300px){
+    .projects{
+        width:90%;
+        left:7%;
+        grid-template-columns: 80%;
+        grid-row-gap: 10%;
+    }
+    
 }

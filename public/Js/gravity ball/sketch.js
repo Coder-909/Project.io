@@ -1,7 +1,7 @@
-var balls = Array(200);
+var balls = Array(400);
 
 function setup() {
-    createCanvas(800,600);
+    createCanvas(innerWidth,innerHeight);
 
     for(let i = 0; i < balls.length; i++){
         balls[i] = new Ball();
