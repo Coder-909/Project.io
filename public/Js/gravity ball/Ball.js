@@ -1,7 +1,7 @@
 class Ball{
     constructor(){
-        this.x = random(0,innerWidth);
-        this.y = random(0,innerHeight - 200);
+        this.x = random(0,innerWidth-this.radius);
+        this.y = random(0,innerHeight - 500);
         this.radius = 40;
         this.gravity = 1;
         this.vy = random(0,5);
@@ -11,7 +11,7 @@ class Ball{
     }
 
     move(){
-        if(this.y + 2 * this.radius + this.vy >= innerHeight){
+        if(this.y + 2 * this.radius + this.vy >= height){
             this.vy = -this.vy * 0.9;
         }else{
             this.vy += this.gravity;
