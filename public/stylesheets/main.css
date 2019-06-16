@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body, html{
     width:100%;
     height:100%;
@@ -182,21 +186,6 @@ nav.scrolled ul li a:hover{
 #contact h2 span{
     color:rgb(0, 81, 255);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
