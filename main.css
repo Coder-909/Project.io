@@ -1,0 +1,348 @@
+body, html{
+    width:100%;
+    height:100%;
+    margin:0px;
+    padding:0px;
+
+}
+*{
+    margin:0;
+    padding: 0;
+}
+
+/* Navigational Bar  |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+nav{
+    width:100%;
+    height: 80px;
+    position: fixed;   
+    z-index: 2;
+    transition: all 0.2s;
+}
+ul{
+    list-style-type: none;
+    margin:30px 20px 20px 60%;   
+    transition: all 0.2s;
+}
+li{
+    float: left;
+}
+li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block; 
+    color:white;
+}
+li a:hover{
+    background:#824e17b3;    
+    transition: all 0.2s;
+}
+nav.scrolled{
+    height:60px;
+    background:white;
+}
+nav.scrolled .topHeading{
+    color:rgb(153, 117, 24);
+    margin:1px 20px 20px 90px;
+}
+nav.scrolled ul {
+    margin:12px 20px 20px 60%;   
+    transition: all 0.2s;
+}
+nav.scrolled ul li a{
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block; 
+    color:rgb(153, 117, 24);   
+}
+nav.scrolled ul li a:hover{
+    background: rgb(216, 208, 189);
+}
+.topHeading{
+    cursor: none;
+    position:absolute;
+    max-width: 30%;
+    padding: 10px;
+    margin:20px 20px 20px 40px;
+    font-family: 'Kaushan Script', cursive;
+    letter-spacing: 5px;
+    color:white;
+    font: 50px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+.toggle{
+    width:100%;
+    background: white;
+    text-align: right;
+    display:none;
+}
+.toggle i{
+    font-size: 26px;
+    color:rgb(153, 117, 24);
+    padding:20px 40px;
+    cursor: pointer;
+}
+
+
+/* Home page |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+#home{
+    width:100%;
+    height:100%;
+    background-image: url("../assets/nature.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* The quote */
+.quote{
+    position: absolute;
+    max-width:50%;
+    font-size: 40px;
+    bottom:10%;
+    left:2%;
+    color:white;
+    font-family: 'Satisfy', cursive;
+}
+.quote span{
+    font-family: 'Righteous', cursive;
+    margin-left:10%;
+}
+
+/* Projects  page ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+#project_tab h1{
+    font-family: 'Questrial', sans-serif;
+    margin:5% 20% ;
+}
+
+#project_tab h2{
+    font-size: 25px;
+    font-family: 'Questrial', sans-serif;
+    margin:0% 20% 3% 6%;
+}
+
+.view_more{
+    text-decoration: none;
+    float:right;
+    margin:-5% 10%;
+}
+
+.projects{
+    width:80%;
+    margin:0% 15%;
+    display:grid;
+    grid-template-columns: 24% 24% 24%;
+    grid-column-gap: 7%;
+    grid-row-gap:20%;
+}
+.card{
+    border-radius: 15px;
+    border:0.5px solid rgb(168, 168, 168);
+    text-decoration: none;
+    width:100%;
+    height:110%;
+    transition: transform 0.3s ,
+                box-shadow 0.3s;
+}
+.card:hover{
+    transform: translate(0px,-10px);
+    box-shadow:0px 7px 10px grey; 
+}
+
+.card img{
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    height:75%;
+    width:100%;
+}
+
+.card h3{
+    text-align: center;
+    color:black;    
+    margin:7% 25% 7% 24%;
+}
+
+
+/* Contact tab |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+#contact{
+    margin:10% 0% 0% 0%;
+    background:goldenrod;
+}
+#contact h1{
+    color:black;
+    font-family: 'Questrial', sans-serif;
+    padding:5% 15% 2% 35%;
+}
+#contact h2{
+    color:black;
+    font-family: 'Questrial', sans-serif;
+    padding:2% 20% 8% 33.5%;
+}
+#contact h2 span{
+    color:rgb(0, 81, 255);
+}
+
+
+
+
+
+
+
+
+
+
+/* All media styles |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+@media (max-width:768px){
+    .toggle{
+        display:block;
+    }
+ 
+    ul{
+        display:none;
+        background: white;
+        width:100%;
+        margin:0px 0px;
+    }
+    nav.scrolled ul{
+        background: white;
+        width:100%;
+        margin:0px 0px;
+    }
+    li{
+        width:100%;
+        text-align: center;
+        display: block;
+        background: rgb(194, 139, 0);
+        color:white;
+    }  
+    li a{
+        padding: 15px;
+    }
+    nav.scrolled ul li a{       
+        padding: 15px;
+
+    }
+    li a:hover{
+        background: rgb(165, 118, 0);
+    }
+    nav.scrolled ul li a:hover{
+        background:rgb(165,118,0);
+    }
+    .active{
+        display:block;
+    }
+    .topHeading{
+        margin:-60px 0px 20px 40%;
+        color:rgb(153, 117, 24);
+    }
+    nav.scrolled .topHeading{
+        margin:-60px 0px 20px 40%;
+        color:rgb(153, 117, 24);
+    }
+
+    .quote{
+       font-size: 35px;
+    }
+}
+
+@media (max-width:950px){
+ 
+    .projects{
+        grid-template-columns: 35% 35%;
+    }
+    
+    #contact{
+        margin:20% 0% 0% 0%;
+        background:goldenrod;
+    }
+    
+    #contact h1{
+        padding:5% 25% 2% 25%;
+    }
+    #contact h2{
+        padding:2% 20% 8% 23.5%;
+    }
+    
+    .quote{
+        max-width: 70% ; 
+    }
+}
+
+@media (max-width:650px){
+    /* .projects{
+        margin-left:20%;
+        grid-template-columns: 70%;
+    } */
+    .projects{
+        width:90%;
+        margin:0% 10%;
+    }
+    .card{
+        width:110%;
+        height:120%;
+    }
+    
+    #contact{
+        margin:30% 0% 0% 0%;
+        background:goldenrod;
+    }
+    #contact h1{
+        padding:5% 15% 2% 15%;
+    }
+    #contact h2{
+        padding:2% 10% 8% 13.5%;
+    }
+}
+
+@media (max-width:460px){
+    .projects{
+        width:90%;
+        margin:0% 7%;
+        grid-template-columns: 40% 40% ;
+        grid-column-gap: 10%;
+    }
+    .card{
+        width:115%;
+    }
+    .card h3{
+        font-size: 14px;
+    }
+    .topHeading{
+        left:-30%;
+    }
+    #contact{
+        margin:40% 0% 0% 0%;
+        background:goldenrod;
+    }
+    
+    #contact h1{
+        padding:5% 5% 2% 5%;
+    }
+    #contact h2{
+        padding:2% 0% 8% 3.5%;
+    }
+    .quote{
+        max-width: 90%;
+        font-size: 30px;
+    }
+}
+
+@media(max-width:300px){   
+    .projects{
+        width:90%;
+        margin:0% 9%;
+        grid-template-columns: 90%;
+        grid-row-gap: 13%;
+    }
+    .card{
+        width:100%;
+    }
+    .card h3{
+        font-size: 20px;
+    }
+    #contact{
+        margin:90% 0% 0% 0%;
+    }
+}
