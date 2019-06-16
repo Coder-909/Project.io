@@ -3,7 +3,6 @@ body, html{
     height:100%;
     margin:0px;
     padding:0px;
-
 }
 *{
     margin:0;
@@ -31,6 +30,7 @@ li a {
     padding: 10px 20px;
     display: block; 
     color:white;
+    font-family: 'Kaushan Script', cursive;
 }
 li a:hover{
     background:#824e17b3;    
@@ -126,7 +126,6 @@ nav.scrolled ul li a:hover{
     float:right;
     margin:-5% 10%;
 }
-
 .projects{
     width:80%;
     margin:0% 15%;
@@ -366,12 +365,12 @@ nav.scrolled ul li a:hover{
 @media(max-width:370px){
     .projects{
         width:95%;
-        margin:0% 5%;
+        margin:0% 2%;
         grid-template-columns: 45% 45%;
-        grid-column-gap: 5%;
+        grid-column-gap: 7%;
     }
     .card{
-        width:100%;
+        width:110%;
     }
     .card h3{
         font-size: 14px;

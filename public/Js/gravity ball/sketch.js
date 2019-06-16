@@ -1,4 +1,4 @@
-var balls = Array(200);
+var balls = Array(100);
 
 function setup() {
     createCanvas(innerWidth,innerHeight);
