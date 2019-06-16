@@ -87,7 +87,7 @@ ul li a:hover{
         color:white;
 
     }
-    li a:hover{
+    nav ul li a:hover{
         background: rgb(165, 118, 0);
     }
     nav.scrolled ul li a:hover{
