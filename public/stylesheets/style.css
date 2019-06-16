@@ -10,7 +10,7 @@ ul {
     margin:11px 20px 20px 60%;
 }
 ul li a{
-    color:white;    
+    color:rgb(153, 117, 24);    
 }
 ul li a:hover{
     background: rgb(216, 208, 189);
