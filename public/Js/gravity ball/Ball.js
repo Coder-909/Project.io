@@ -1,7 +1,7 @@
 class Ball{
     constructor(){
         this.x = random(0,innerWidth-this.radius);
-        this.y = random(0,innerHeight - 500);
+        this.y = random(0,innerHeight - 100);
         this.radius = 40;
         this.gravity = 1;
         this.vy = random(0,5);

@@ -5,9 +5,9 @@ class Drop {
         this.x2 = this.x1;
         this.y1 = random(-800,0);
         this.y2 = this.y1 + this.len;
-        this.gravity = random(0.1,0.2);
+        this.gravity = random(0,0.1);
         this.fv = 0;
-        this.a = map(this.gravity,0.1,0.2,0,255);
+        this.a = map(this.gravity,0,0.1,0,255);
     }
 
     fall(){
@@ -21,7 +21,7 @@ class Drop {
             this.x2 = this.x1;
             this.y1 = random(-500,-10);
             this.y2 = this.y1 + this.len;
-            this.gravity = random(0,0.2);
+            this.gravity = random(0,0.1);
             this.fv = 0;
         }
     }

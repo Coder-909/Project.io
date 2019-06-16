@@ -52,7 +52,7 @@ nav.scrolled ul li a{
     text-decoration: none;
     padding: 10px 20px;
     display: block; 
-    color:rgb(153, 117, 24);   
+    color:white;   
 }
 nav.scrolled ul li a:hover{
     background: rgb(216, 208, 189);
@@ -112,7 +112,7 @@ nav.scrolled ul li a:hover{
 
 #project_tab h1{
     font-family: 'Questrial', sans-serif;
-    margin:5% 20% ;
+    margin:5% 20%;
 }
 
 #project_tab h2{
@@ -192,9 +192,25 @@ nav.scrolled ul li a:hover{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* All media styles |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 
 @media (max-width:768px){
+
+
     .toggle{
         display:block;
     }
@@ -249,6 +265,10 @@ nav.scrolled ul li a:hover{
 
 @media (max-width:950px){
  
+    #home{
+        width:100%;
+    }
+
     .projects{
         grid-template-columns: 35% 35%;
     }
@@ -270,20 +290,26 @@ nav.scrolled ul li a:hover{
     }
 }
 
-@media (max-width:650px){
-    /* .projects{
-        margin-left:20%;
-        grid-template-columns: 70%;
-    } */
+@media (max-width:650px){ 
+    #home{
+        width:100%;
+    }
+    .view_more{
+        font-size: 12px;
+        margin:-8% 3%;
+    }
     .projects{
         width:90%;
-        margin:0% 10%;
+        margin:0% 9%;
+        grid-template-columns: 40% 40%;
+        grid-column-gap: 10%;
     }
     .card{
-        width:110%;
-        height:120%;
+        width:100%;
     }
-    
+    .card h3{
+        font-size: 14px;
+    }
     #contact{
         margin:30% 0% 0% 0%;
         background:goldenrod;
@@ -294,13 +320,25 @@ nav.scrolled ul li a:hover{
     #contact h2{
         padding:2% 10% 8% 13.5%;
     }
+    #project_tab h1{
+        font-family: 'Questrial', sans-serif;
+        margin:5% 10%;
+    }
+    .quote{        
+        margin:5% 7%;
+        max-width: 90%;
+        font-size: 28px;
+    }
 }
 
 @media (max-width:460px){
+    #home{
+        width:100%;
+    }
     .projects{
         width:90%;
         margin:0% 7%;
-        grid-template-columns: 40% 40% ;
+        grid-template-columns: 40% 40%;
         grid-column-gap: 10%;
     }
     .card{
@@ -323,13 +361,34 @@ nav.scrolled ul li a:hover{
     #contact h2{
         padding:2% 0% 8% 3.5%;
     }
-    .quote{
-        max-width: 90%;
-        font-size: 30px;
+}
+
+@media(max-width:370px){
+    .projects{
+        width:95%;
+        margin:0% 5%;
+        grid-template-columns: 45% 45%;
+        grid-column-gap: 5%;
+    }
+    .card{
+        width:100%;
+    }
+    .card h3{
+        font-size: 14px;
+    }
+    #contact h1{
+        font-size:27px;
+        padding:5% 5% 2% 5%;
+    }
+    #contact h2{
+        font-size:22px;
     }
 }
 
 @media(max-width:300px){   
+    #home{
+        width:100%;
+    }
     .projects{
         width:90%;
         margin:0% 9%;

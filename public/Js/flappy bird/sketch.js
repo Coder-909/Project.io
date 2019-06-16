@@ -5,8 +5,6 @@ var g = 100;
 var b = 200;
 
 var gameOver = document.getElementById('gameover');
-var score = document.getElementById('score');
-var score_num = 0;
 
 function setup() {
     createCanvas(innerWidth-1,innerHeight-3.7);
@@ -30,7 +28,6 @@ function draw() {
 
         if(pipes[i].score(bird)){
             console.log("score");
-            score_num += 1;
         } 
     }
 
@@ -41,7 +38,6 @@ function draw() {
         pipes.push(new Pipe());
     }
 
-    score.innerHTML = score_num;
 }
 
 function keyPressed(){
