@@ -50,9 +50,9 @@ nav.scrolled ul {
 }
 nav.scrolled ul li a{
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 7px 20px;
     display: block; 
-    color:white;   
+    color:rgb(153, 117, 24);   
 }
 nav.scrolled ul li a:hover{
     background: rgb(216, 208, 189);
@@ -237,6 +237,7 @@ nav.scrolled ul li a:hover{
     }
     nav.scrolled ul li a{       
         padding: 15px;
+        color:white;
 
     }
     li a:hover{
